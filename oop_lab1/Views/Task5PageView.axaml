@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:actipro="http://schemas.actiprosoftware.com/avaloniaui"
+        xmlns:vm="using:avalonia_demo8.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="avalonia_demo8.Views.Task5PageView">
+    <StackPanel Margin="10">
+        <TextBlock Text="Завдання 5: Чи належить x відрізку [a, b]" FontWeight="Bold" />
+  <TextBlock Margin="5" Text="Знайти всі n-значні числа, сума квадратів цифр яких кратна М." FontWeight="Light"/>
+        <TextBox x:Name="InputA" Watermark="a"/>
+        <TextBox x:Name="InputB" Watermark="b"/>
+        <TextBox x:Name="InputX" Watermark="x"/>
+        <Button Content="Перевірити" Click="OnCheck"/>
+        <TextBlock x:Name="ResultText"/>
+  </StackPanel>
+</UserControl>

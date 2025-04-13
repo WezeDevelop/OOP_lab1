@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:actipro="http://schemas.actiprosoftware.com/avaloniaui"
+        xmlns:vm="using:avalonia_demo8.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="avalonia_demo8.Views.Task2PageView">
+    
+    <StackPanel Margin="20">
+  <TextBlock Text="Завдання 2: Площа кільця" FontWeight="Bold"/>
+  <TextBlock Margin="5" Text="Знайти площу кільця, внутрішній радіус якого рівний r, а зовнішній – R (R > r). " FontWeight="Light"/>
+    <Image Margin="20" Height="100" Source="avares://avalonia_demo8/Assets/task2_img.png"/>
+  <TextBox x:Name="InputR" Watermark="Зовнішній радіус R"/>
+  <TextBox x:Name="Inputr" Watermark="Внутрішній радіус r" Margin="0,5,0,0"/>
+  <Button Content="Обчислити" Click="OnCalculate"/>
+  <TextBlock x:Name="ResultText"/>
+</StackPanel>
+</UserControl>

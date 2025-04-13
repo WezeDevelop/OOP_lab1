@@ -1,0 +1,16 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:actipro="http://schemas.actiprosoftware.com/avaloniaui"
+        xmlns:vm="using:avalonia_demo8.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="avalonia_demo8.Views.Task6PageView">
+    <StackPanel Margin="10">
+    <TextBlock Text="Завдання 6: Число позитивне, від’ємне чи нуль" FontWeight="Bold" />
+    <TextBlock Margin="5" TextWrapping="Wrap" Text="Секретний замок для сейфа складається з 10 розташованих у ряд гнізд, у які треба вставити гральні кубики. Але двері відкривається тільки в тому випадку, коли в будь-яких трьох сусідніх гніздах сума точок на передніх гранях кубиків рівна 10. (Гральний кубик має на кожної грані від 1 до 6 точок.) Напишіть програму, яка розгадує код замка за умови, що два кубики вже вставлені в гнізда." FontWeight="Regular"></TextBlock>
+    <TextBox x:Name="FixedCubesInput" Watermark="Введіть фіксовані кубики (напр. '2:5;5:3')" Margin="0,10,0,0"/>
+        <Button Content="Розгадати код" Click="OnCheck" Margin="0,10"/>
+        <TextBlock x:Name="ResultText" Margin="0,10" TextWrapping="Wrap"/>
+  </StackPanel>
+</UserControl>

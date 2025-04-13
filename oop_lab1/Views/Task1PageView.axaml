@@ -1,0 +1,17 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:actipro="http://schemas.actiprosoftware.com/avaloniaui"
+        xmlns:vm="using:avalonia_demo8.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="avalonia_demo8.Views.Task1PageView">
+    
+    <StackPanel Margin="20">
+    <TextBlock Text="Завдання 1: Обчислити значення виразу" FontWeight="Bold" />
+    <Image Margin="20" Height="100" Source="avares://avalonia_demo8/Assets/task1_img.png"/>
+    <TextBox x:Name="InputX" Watermark="Введіть x" />
+    <Button Content="Обчислити" Click="OnCalculate" Margin="0,10,0,0"/>
+    <TextBlock x:Name="ResultText" Foreground="DarkGreen"/>
+  </StackPanel>
+</UserControl>

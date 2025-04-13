@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:actipro="http://schemas.actiprosoftware.com/avaloniaui"
+        xmlns:vm="using:avalonia_demo8.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="avalonia_demo8.Views.Task3PageView">
+    <StackPanel Margin="10" Spacing="10">
+        <TextBlock Text="Завдання 3: Середнє арифметичне" FontWeight="Bold"/>
+        <TextBlock Text="Перевірити, чи число c є середнім арифметичним чисел a та b" TextWrapping="Wrap"/>
+        
+        <TextBox x:Name="InputA" Watermark="Введіть число a"/>
+        <TextBox x:Name="InputB" Watermark="Введіть число b"/>
+        <TextBox x:Name="InputC" Watermark="Введіть число c"/>
+        
+        <Button Content="Перевірити" Click="OnCheck"/>
+        <TextBlock x:Name="ResultText" FontWeight="Bold"/>
+    </StackPanel>
+</UserControl>
